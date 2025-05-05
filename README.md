@@ -118,9 +118,7 @@ public function vtweb()
             'billing_address' => $billing_address,
             'shipping_address'=> $shipping_address
             );
-        // Data yang akan dikirim untuk request redirect_url.
-        // Uncomment 'credit_card_3d_secure' => true jika transaksi ingin diproses dengan 3DSecure.
-        $transaction_data = array(
+        
             'payment_type'          => 'vtweb', 
             'vtweb'                         => array(
                 //'enabled_payments'    => [],
